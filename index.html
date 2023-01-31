@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RelaxingForm</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="container-page">
+        <div class="glider-contain">
+            <div class="glider"> 
+                <div class="card1">
+                    <h1 class="animate__animated animate__fadeInDown">Seja bem-vindo ao <em class="em-relax">Formulário Relaxante</em></h1><br>
+                    <h1 class="animate__animated animate__fadeInUp animate__delay-1s">Responda as perguntas no seu próprio tempo enquanto aproveita uma música <strong class="strong-relax">relaxante</strong></h1><br>
+                    <h2 class="animate__animated animate__fadeInUp animate__delay-4s">Clique na seta "anterior" («) para voltar e na seta "próxima" (») para prosseguir</h2>
+                </div>
+                <div class="card2">
+                    <h1>INFOS</h1>
+                    <h2>Após preencher os espaços, não se esqueça de clicar no botão <img src="/img/aviao-de-papel.png"> para enviar suas respostas.</h2>
+                    <h2>Você terá a opção de escolher 3 músicas (você pode fazer sem nenhum som se for de sua preferência).</h2>
+                </div>
+                <div class="card3">
+                    <h1>Escolha a música de sua preferência:</h1>
+                    <audio controls loop>
+                        <source src="/musics/MUSIC NO COPYRIGHT - MUSICA SEM DIREITOS AUTORAIS _ Lofi hip hop beat 1 (128 kbps).mp3">
+                    </audio>
+                    <audio controls loop>
+                        <source src="/musics/MUSIC NO COPYRIGHT - MUSICA SEM DIREITOS AUTORAIS _ Lofi hip hop beat 2 (128 kbps) (1).mp3">
+                    </audio>
+                    <audio controls loop>
+                        <source src="/musics/LOFI SEM DIREITOS AUTORAIS - NO COPYRIGHT - VLOGS- MUSICA PARA VIDEOS - KITSUNE (128 kbps).mp3">
+                    </audio>
+                </div>
+                <div class="card4">
+                    <form class="form" id="check-name">
+                        <label for="name">Nos diga o seu nome:</label><br>
+                        <input id="name" type="text" placeholder="Nome" required><br>
+                        <label for="lastName">E o seu sobrenome?</label><br>
+                        <input id="lastName" type="text" placeholder="Sobrenome" required><br>  
+                        <button type="submit" id="send-name"><img src="/img/aviao-de-papel.png"></button>
+                    </form>
+                </div>
+                <div class="card5">
+                    <h1>Certo, agora que sabemos o seu nome...</h1>
+                    <h1>Nos conte mais sobre você...</h1>
+                </div>
+                <div class="card6">
+                    <form class="form" id="check-questions">
+                        <div class="container-questions">
+                            <div class="questions-hobbie">
+                                <label for="hobbie">Qual seria o seu hobbie favorito?</label>
+                                <input id="hobbie" type="text" placeholder="Hobbie" required>
+                            </div>
+                            <div class="questions-age">
+                                <label for="age">Qual a sua idade?</label>
+                                <input id="age" type="number" placeholder="Idade" required>
+                            </div>
+                       </div>
+                        <div class="selectOptions">
+                            <select name="job" id="job" required>
+                                <option value="" selected disabled>Em qual área você pretende atuar ou atua?</option>
+                                <option value="Administração">Administração</option>
+                                <option value="Ciência da computação">Ciência da Computação</option>
+                                <option value="Gastronomia">Gastronomia</option>
+                                <option value="Design">Design</option>
+                                <option value="Engenharia">Engenharia</option>
+                                <option value="Medicina">Medicina</option>
+                                <option value="Outro">Outro</option>
+                            </select>
+                            <select name="schooling" id="schooling" required>
+                                <option value="" selected disabled>Qual o seu nível de escolaridade?</option>
+                                <option value="Ensino fundamental incompleto">Ensino fundamental incompleto</option>
+                                <option value="Ensino fundamental completo">Ensino fundamental completo</option>
+                                <option value="Ensino médio incompleto">Ensino médio incompleto</option>
+                                <option value="Ensino médio completo">Ensino médio completo</option>
+                                <option value="Ensino superior incompleto">Ensino superior incompleto</option>
+                                <option value="Ensino superior completo">Ensino superior completo</option>
+                            </select>
+                        </div> 
+                        <button type="submit" id="send-questions"><img src="/img/aviao-de-papel.png"></button>
+                    </form>
+                </div>
+                <div class="card7">
+                    <form class="form" id="check-description">
+                        <h1>Num todo, como você se descreveria?</h1>
+                        <textarea placeholder="Escreva aqui..." id="description" required></textarea>
+                        <button type="submit" id="send-button"><img src="/img/aviao-de-papel.png"></button>
+                    </form>
+                </div>
+                <div class="card8">
+                    <h2>Então é isso, só tenho a agradecer por ter paciência e por ter preenchido este formulário!</h2>
+                    <h2>Para finalizar, se for de sua vontade, gostaria de receber um resumo do formulário no seu email?</h2>
+                    <form class="check-email" id="check-email">
+                        <input id="email" type="email" placeholder="Email">
+                        <button type="submit" id="send-description"><img src="/img/aviao-de-papel.png"></button>
+                    </form>
+                    <p>*Tenha certeza de que preencheu tudo, ao contrário, os espaços ficaram em branco*</p>
+                    <a href="https://www.flaticon.com/br/icones-gratis/aviao-de-papel" title="avião de papel ícones">Créditos: Avião de papel ícones criados por IconBaandar - Flaticon</a>
+                </div>
+            </div>
+            <button aria-label="Previous" class="glider-prev">«</button>
+            <button aria-label="Next" class="glider-next">»</button>
+        </div>
+        <div role="tablist" class="dots"></div>
+    </section>
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("xfxacjELc5ow2ceuV");
+        })();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
