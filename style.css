@@ -53,7 +53,7 @@ button {
     font-size: 20px;
 }
 .card2 {
-    padding: 15px;
+    padding: 25px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -113,7 +113,7 @@ button {
     display: flex;
     flex-direction: column;
     gap: 60px;
-    padding-bottom: 30px;
+    padding: 8px;
 }
 .card5 h1 {
     font-size: 40px;
@@ -278,7 +278,27 @@ button {
     margin: 250px 400px 0px 0px;
 }
 
-
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+    .glider-contain {
+        border: 1px solid red;
+    }
+    .glider-prev {
+        margin: 250px 0px 0px 330px
+    }
+    .glider-next {
+        margin: 250px 320px 0px 0px;
+    }
+    .container-questions {
+        gap: 90px;
+    }
+    .selectOptions {
+        gap: 140px;
+    }
+    .card8 a {
+        margin: 15px 500px 20px 0px;
+        font-size: 8px;
+    }
+}
 @media screen and (min-width: 600px) and (max-width: 768px) {
     .glider-contain {
         height: 85vh;
