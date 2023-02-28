@@ -279,14 +279,20 @@ button {
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1200px) {
-    .glider-contain {
-        border: 1px solid red;
-    }
     .glider-prev {
         margin: 250px 0px 0px 330px
     }
     .glider-next {
         margin: 250px 320px 0px 0px;
+    }
+    .card2 {
+        margin-top: 20px;
+    }
+    .card4 form {
+        margin-top: 20px;
+    }
+    .card6 form {
+        margin-top: 20px;
     }
     .container-questions {
         gap: 90px;
